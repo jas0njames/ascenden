@@ -1,0 +1,594 @@
+@viewport {
+    width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+	font-family: 'Arimo', arial, sans-serif;
+	font-weight: 400;
+	color: #636467;
+	font-size: 12px;
+	line-height: 17px;
+	background: white;
+}
+
+#headr {
+	position: relative;
+	height: 112px;
+	background-color: #3B3C3B;
+	width: 100%;
+	min-width: 1040px;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+#headr img {
+	bottom: 25%;
+    display: inline-block;
+    height: 56px;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    width: 120px;
+}
+#topnav {
+	height: 47px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+    -webkit-overflow-scrolling: touch;
+    width: 390px;
+    margin: 0 auto;
+    z-index: 2;
+}
+#navbar {
+	margin-top: 0px;
+     font-family: 'Montserrat', verdana, sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #6FB8C2;
+     position: absolute;
+     list-style:none;
+     z-index: 5;
+	padding: 0;
+}
+#navbar li {
+	float: left;
+	margin-right: 11px;
+	position: relative;	
+	width: 86px;
+	display: inline-block;
+	background: white;
+	color: #6FB8C2;
+	text-decoration: none;
+	padding: 16px 0px 14px 0px;
+	background: white;
+	text-align: center;
+}
+#navbar a {
+	display:block;
+	text-decoration:none;
+	color: #6FB8C2;
+	text-decoration: none;
+}
+#navbar li:hover {
+	background: #4D4D4D;
+	color: white;
+	text-decoration: none;
+}
+#navbar a:hover {
+	color: #6FB8C2;
+	text-decoration: none;
+}
+
+/*--- DROPDOWN ---*/
+#navbar ul{
+	font-family: 'Arimo', arial, sans-serif;
+	font-weight: 400;
+	color: #636467;
+	background:#4D4D4D;
+	font-size: 9px;
+	text-transform:capitalize;
+	list-style:none;
+	position:absolute;
+	padding: 8px 0px;
+	width: 86px;
+	text-align:left;
+	margin: 0px;
+	opacity: 0.0;
+	filter: alpha(opacity=0);       /* IE8 and lower */
+   	zoom: 1;
+	visibility:hidden;
+}
+#navbar ul li{
+	float:none;
+	background:#4D4D4D;
+	padding: 6px 0px;
+	text-align:left;
+}
+#navbar ul a{
+	white-space:nowrap;  /*Stop text wrapping and creating multi-line dropdown items */
+	padding-left: 10px;
+}
+#navbar li:hover ul{ /* Display the dropdown on hover */
+	left:0px; /* Bring back on-screen when needed */
+	-webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity:1.0;
+    filter: alpha(opacity=100);       /* IE8 and lower */
+   	zoom: 1;
+	visibility:visible;
+}
+#navbar li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background: #4D4D4D;
+	color: white;
+	text-decoration: none;
+}
+#navbar li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#navbar li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	color:#CEEBEA;
+}
+#hero {
+	background: url('http://theofficeofjasonjames.com/ascenden/img/hero.jpg');
+	background-repeat:no-repeat;
+	background-position:right bottom;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 485px;
+    width: 960px;
+}
+.column {
+	margin: 0 auto;
+	padding: 165px 0px;
+	width: 664px;
+}
+.column p {
+	color: white;
+	font-family: 'Forum', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 21px;
+	letter-spacing:1px;
+	line-height: 28px;
+	max-width: 567px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.column a {
+     font-family: 'Montserrat', verdana, sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: white;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.column a:hover {
+	color: #3B3C3B;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+#holder {
+	display:block;
+	margin: 0 auto;
+	width: 960px;
+	padding: 0px 40px;
+	}
+#smholder {
+	display:block;
+	margin: 0 auto;
+	width: 940px;
+	padding: 0px 40px;
+	}
+#leftcolumn {
+	width: 74.468%;
+	background: #F0F0F0;
+	float: left;
+	min-height:588px;
+}
+#leftcolumn .content {
+	padding: 33px 0px 0px 33px;
+	width: 555px;
+	margin-bottom: 60px;
+}
+h1 {
+     font-family: 'Montserrat', verdana, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0px 0px 20px 0px;
+	-webkit-font-smoothing: antialiased;
+}
+h2 {
+     font-family: 'Montserrat', verdana, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0px 0px 3px 0px;
+	-webkit-font-smoothing: antialiased;
+}
+p {
+	margin: 0px 0px 17px 0px;
+}
+p a {
+	text-decoration: underline;
+	color: #636467;
+}
+p a:hover {
+	font-weight: 700;
+	color: #636467;
+}
+#leftcolumn .content span {
+	text-decoration: underline;
+}
+#leftcolumn .content ul {
+	margin: 0px 0px 17px 0px;
+	padding-left: 15px;	
+}
+h3 {
+	font-size: 12px;
+	font-weight: 700;
+	margin: 0px 0px 2px 0px;
+	-webkit-font-smoothing: antialiased;	
+}
+#rightcolumn {
+	width: 25.532%;
+	float: right;
+	clear: none;
+	color: white;
+	background: white;
+}
+#rightcolumn .content {
+	padding: 33px 20px 14px 21px;
+	width: 195px;
+	margin-bottom: 18px;
+	background: #4D4D4D;
+}
+#rightcolumn .content p {
+	font-size: 10px;
+	line-height: 14px;
+	margin: 0px 0px 15px 0px;
+	color: #F2F2F2;
+}
+#rightcolumn .content p a {
+	font-size: 10px;
+	line-height: 14px;
+	color: #F2F2F2;
+	text-decoration: underline;
+}
+#rightcolumn .content p a:hover, #rightcolumn .content p a:visited {
+	color: #F2F2F2;
+	text-decoration: underline;
+}
+
+#rightcolumn .content ul {
+	font-size: 10px;
+	line-height: 14px;
+	margin: 0px 0px 20px 15px;
+	color: #F2F2F2;
+	padding: 0;
+}
+#rightcolumn .button {
+     font-family: 'Montserrat', verdana, sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+#rightcolumn .button a {
+	text-decoration: none;
+	width: 180px;
+	padding: 20px 14px;
+	color: white;
+	background: #B3B3B3;
+}
+#rightcolumn .button a:hover {
+	background: #7BCDD0;
+}
+#foot {
+	border-top: 1px #999999 solid;
+	width: 100%;
+	margin-top: 16px;
+	padding: 10px 0px 27px 0px;
+	float: left;
+	clear: both;
+}
+#foot p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #BCBEC0;
+	margin: 0;
+	padding: 0;	
+}
+#foot img {
+	float: right;
+	margin-top: 4px;
+}
+a.nolink {
+	font-weight: normal;
+	position:relative;
+    z-index:24;
+    color:#636467;
+    text-decoration:underline;
+}
+a.nolink:hover {
+	font-weight: normal;
+	z-index:25;
+}
+a.nolink span {
+    text-decoration:none !important;
+	position:absolute;
+	top:-56px; 
+    left:125px;
+        width:158px;
+    text-align: left;
+    background: #000000;
+	padding: 12px;
+   	filter: alpha(opacity=0);       /* IE8 and lower */
+   	zoom: 1;       /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */
+
+	font-size: 10px;
+	line-height: 14px;
+	margin-bottom: 5px;
+	color:white;
+	opacity: 0.0;
+	    display:block;
+}
+a.nolink:hover span{ /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top:-56px; 
+    left:125px; 
+    width:158px;
+	color:white;
+    text-align: left;
+    background: #000000;
+	padding: 12px;
+   	opacity: 0.7;
+   	filter: alpha(opacity=70);       /* IE8 and lower */
+   	zoom: 1;       /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */
+    text-decoration:none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+a.nolink span b {
+	font-size: 12px;
+	font-weight: 700;
+}
+a.nolink span br {
+line-height: 17px;	
+}
+.white {
+	color: white;
+}
+a.nolink span:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+a.nolink span:after {
+	border-color: rgba(0, 0, 0, 0);
+	border-right-color: #000000;
+	border-width: 15px;
+	top: 50%;
+	margin-top: -15px;
+}
+.clear {
+	clear: both;
+}
+.bottom {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 8px;
+	width: 100%;
+	background: #3B3C3B;
+}
+#ascent {
+	background: url('http://theofficeofjasonjames.com/ascenden/img/yourascent.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+     height: 629px;
+     width: 940px;
+	margin: 0px;
+}
+#ascentcontent {
+	width: 870px;
+	margin: 0px;
+	background: #F0F0F0;
+	min-height:359px;
+	padding: 30px 35px 0px 35px;
+}
+.c1 {
+	width: 373px;
+	float: left;
+}
+.c2 {
+	width: 457px;
+	float: right;
+}
+#aug {
+	position: relative;
+	top: 381px;
+	left: 110px;
+	background: url('http://theofficeofjasonjames.com/ascenden/img/aug.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	height: 185px;
+	width: 153px;
+	display: inline-block;
+}
+#aug:hover {
+	background: url('http://theofficeofjasonjames.com/ascenden/img/aug-hov.png');
+	-webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#ass {
+	position: relative;
+	top: 240px;
+	left: 143px;
+	background: url('http://theofficeofjasonjames.com/ascenden/img/ass.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	height: 178px;
+	width: 128px;
+	display: inline-block;
+}
+#ass:hover {
+	background: url('http://theofficeofjasonjames.com/ascenden/img/ass-hov.png');
+	-webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#rem {
+	position: relative;
+	top: 164px;
+	left: 240px;
+	background: url('http://theofficeofjasonjames.com/ascenden/img/rem.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	height: 181px;
+	width: 96px;
+	display: inline-block;
+}
+#rem:hover {
+	background: url('http://theofficeofjasonjames.com/ascenden/img/rem-hov.png');
+	-webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#imp {
+	position: relative;
+	top: 76px;
+	left: 270px;
+	background: url('http://theofficeofjasonjames.com/ascenden/img/imp.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	height: 181px;
+	width: 169px;
+	display: inline-block;
+}
+#imp:hover {
+	background: url('http://theofficeofjasonjames.com/ascenden/img/imp-hov.png');
+	-webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+     -o-transition: all .3s ease;
+     transition: all .3s ease;
+}
+a.implink {
+	font-weight: normal;
+	position:relative;
+    z-index:24;
+    color:#636467;
+    text-decoration:none;
+}
+a.implink:hover {
+	font-weight: normal;
+	z-index:25;
+}
+a.implink span {
+	position:absolute;
+	top:60px; 
+    	left:-57px;
+    	width:258px;
+    	text-align: left;
+    	background: #000000;
+	padding: 14px;
+   	filter: alpha(opacity=0);       /* IE8 and lower */
+   	zoom: 1;       /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */
+	font-size: 10px;
+	line-height: 15px;
+	margin-bottom: 5px;
+	color:white;
+	opacity: 0.0;
+	display:block;
+}
+#imp:hover span{ /*the span will display just on :hover state*/ 
+   	opacity: 0.7;
+   	filter: alpha(opacity=70);       /* IE8 and lower */
+   	zoom: 1;       /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+a.implink span b {
+	font-size: 12px;
+	font-weight: 700;
+}
+a.implink span br {
+line-height: 17px;	
+}
+a.implink span:after {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+a.implink span:after {
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #000000;
+	border-width: 15px;
+	left: 20%;
+	margin-left: -15px;
+}
+#rem:hover span{ /*the span will display just on :hover state*/ 
+   	opacity: 0.7;
+   	filter: alpha(opacity=70);       /* IE8 and lower */
+   	zoom: 1;       /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#ass:hover span{ /*the span will display just on :hover state*/ 
+   	opacity: 0.7;
+   	filter: alpha(opacity=70);       /* IE8 and lower */
+   	zoom: 1;       /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#aug:hover span{ /*the span will display just on :hover state*/ 
+   	opacity: 0.7;
+   	filter: alpha(opacity=70);       /* IE8 and lower */
+   	zoom: 1;       /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
